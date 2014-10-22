@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:ns="http://ws.apache.org/axis2" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://ws.apache.org/axis2">
+    <wsdl:types>
+        <xs:schema attributeFormDefault="qualified" elementFormDefault="unqualified" targetNamespace="http://ws.apache.org/axis2">
+            <xs:element name="reverseCustInfo">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="input" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="reverseCustInfoResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:complexType name="Exception">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="Exception" nillable="true" type="xs:anyType"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="Exception">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="Exception" nillable="true" type="ns:Exception"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="queryCustInfo">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="xmldocument" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="queryCustInfoResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="reverseCustInfoRequest">
+        <wsdl:part name="parameters" element="ns:reverseCustInfo"/>
+    </wsdl:message>
+    <wsdl:message name="reverseCustInfoResponse">
+        <wsdl:part name="parameters" element="ns:reverseCustInfoResponse"/>
+    </wsdl:message>
+    <wsdl:message name="queryCustInfoRequest">
+        <wsdl:part name="parameters" element="ns:queryCustInfo"/>
+    </wsdl:message>
+    <wsdl:message name="queryCustInfoResponse">
+        <wsdl:part name="parameters" element="ns:queryCustInfoResponse"/>
+    </wsdl:message>
+    <wsdl:message name="Exception">
+        <wsdl:part name="parameters" element="ns:Exception"/>
+    </wsdl:message>
+    <wsdl:portType name="QueryInfoServicePortType">
+        <wsdl:operation name="reverseCustInfo">
+            <wsdl:input message="ns:reverseCustInfoRequest" wsaw:Action="urn:reverseCustInfo"/>
+            <wsdl:output message="ns:reverseCustInfoResponse" wsaw:Action="urn:reverseCustInfoResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="queryCustInfo">
+            <wsdl:input message="ns:queryCustInfoRequest" wsaw:Action="urn:queryCustInfo"/>
+            <wsdl:output message="ns:queryCustInfoResponse" wsaw:Action="urn:queryCustInfoResponse"/>
+            <wsdl:fault message="ns:Exception" name="Exception" wsaw:Action="urn:queryCustInfoException"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="QueryInfoServiceSoap11Binding" type="ns:QueryInfoServicePortType">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="reverseCustInfo">
+            <soap:operation soapAction="urn:reverseCustInfo" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="queryCustInfo">
+            <soap:operation soapAction="urn:queryCustInfo" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="Exception">
+                <soap:fault use="literal" name="Exception"/>
+            </wsdl:fault>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="QueryInfoServiceSoap12Binding" type="ns:QueryInfoServicePortType">
+        <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="reverseCustInfo">
+            <soap12:operation soapAction="urn:reverseCustInfo" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="queryCustInfo">
+            <soap12:operation soapAction="urn:queryCustInfo" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="Exception">
+                <soap12:fault use="literal" name="Exception"/>
+            </wsdl:fault>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="QueryInfoService">
+        <wsdl:port name="QueryInfoServiceHttpSoap11Endpoint" binding="ns:QueryInfoServiceSoap11Binding">
+            <soap:address location="http://localhost:8080/axis2/services/QueryInfoService.QueryInfoServiceHttpSoap11Endpoint/"/>
+        </wsdl:port>
+        <wsdl:port name="QueryInfoServiceHttpsSoap11Endpoint" binding="ns:QueryInfoServiceSoap11Binding">
+            <soap:address location="https://localhost:8443/axis2/services/QueryInfoService.QueryInfoServiceHttpsSoap11Endpoint/"/>
+        </wsdl:port>
+        <wsdl:port name="QueryInfoServiceHttpSoap12Endpoint" binding="ns:QueryInfoServiceSoap12Binding">
+            <soap12:address location="http://localhost:8080/axis2/services/QueryInfoService.QueryInfoServiceHttpSoap12Endpoint/"/>
+        </wsdl:port>
+        <wsdl:port name="QueryInfoServiceHttpsSoap12Endpoint" binding="ns:QueryInfoServiceSoap12Binding">
+            <soap12:address location="https://localhost:8443/axis2/services/QueryInfoService.QueryInfoServiceHttpsSoap12Endpoint/"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

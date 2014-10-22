@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench version="2.0">
+<workbenchAdvisor/>
+<window height="728" maximized="true" width="1024" x="0" y="0">
+<fastViewData fastViewLocation="1024">
+<orientation position="512" view="com.ibm.xtools.mde.guidance"/>
+</fastViewData>
+<intro standby="true"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout locked="0">
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="124" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="com.ibm.etools.msg.reporting.infrastructure.actionSet" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="com.ibm.etools.patterns.PatternActionSet" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="com.rational.clearcase.ActionSet" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="135" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="55" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.ibm.etools.references.ui.debugTrimToolbarContributionToolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="198" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.wst.wsdl.ui.internal.WSDLEditor" itemType="typePlaceholder" x="103" y="22"/>
+<coolItem id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" itemType="typePlaceholder" x="103" y="22"/>
+<coolItem id="com.ibm.etools.mft.flow.editor" itemType="typePlaceholder" x="389" y="22"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="com.ibm.support.feedback.errorreports.ui.crashReportToolbar" itemType="typeToolBarContribution" x="140" y="22"/>
+<coolItem id="com.ibm.cic.licensing.common.ui.controlContribution" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1386059609119" focus="true" label="Workspace - Integration Development">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor activePart="true" focus="true" id="com.ibm.wbit.samples.framework.editor.SamplesGalleryEditor" name="Samples for IBM Integration Toolkit" partName="Samples and Tutorials" title="Samples and Tutorials" tooltip="" workbook="DefaultEditorWorkbook">
+<input PRODUCTID="com.ibm.etools.msgbroker.tooling.ide" PRODUCTNAME="IBM Integration Toolkit" factoryID="com.ibm.wbit.samples.framework.editor.SamplesGalleryEditorElementFactory"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline"/>
+<view id="org.eclipse.ui.internal.introview" partName="Welcome">
+<viewState>
+<presentation currentPage="root" restore="true"/>
+<standbyPart/>
+</viewState>
+</view>
+<view id="com.ibm.etools.mft.navigator.resource" partName="Application Development">
+<viewState ProjectsMode="AppLib" project_scrollbar_horizontal="0" project_scrollbar_vertical="0" sectionExpansion="ONLY_PROJECTS" sectionExpansionFirstWeight="100" sorter="0" workingSetName="">
+<filters>
+<filter element="Elements And Attributes (Schema Files)"/>
+<filter element="Types (Schema Files)"/>
+<filter element="Empty Parent Message Namespaces"/>
+<filter element="Groups (Schema Files)"/>
+<filter element=".*"/>
+<filter element="Messages (Schema Files)"/>
+<filter element="Empty Parent Broker Schemas"/>
+</filters>
+<expanded>
+<element path="TestOne"/>
+<element path="TestOne|WSDL Definitions"/>
+<element path="TestOne|Flows"/>
+</expanded>
+<elementMap name="[TestOne]">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/TestOne" type="4"/>
+</elementMap>
+</viewState>
+</view>
+<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" partName="Data Source Explorer"/>
+<view id="com.ibm.etools.patterns.views.PatternExplorerView" partName="Patterns Explorer"/>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<columnWidths org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="118" org.eclipse.ui.ide.severityAndDescriptionField="394"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="com.ibm.xtools.mde.guidance" partName="MDD Guidance"/>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
+<view id="com.ibm.etools.mft.broker.runtime.views.DeploymentLogView" partName="Deployment Log">
+<viewState/>
+</view>
+<view id="com.ibm.etools.mft.broker.runtime.views.BrokerRuntimeView" partName="Integration Nodes">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="com.ibm.wbit.samples.framework.editor.SamplesGalleryEditor" activePerspective="com.ibm.etools.mft.perspectives.BrokerDevelopmentPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.ibm.etools.mft.perspectives.BrokerDevelopmentPerspective" id="com.ibm.etools.mft.perspectives.BrokerDevelopmentPerspective" label="Integration Development"/>
+<alwaysOnActionSet id="com.ibm.bpm.gettingstarted.actionset.id"/>
+<alwaysOnActionSet id="com.ibm.rational.welcome.core.helpSearchActionSet"/>
+<alwaysOnActionSet id="com.ibm.cic.licensing.common.ui.actionSet"/>
+<alwaysOnActionSet id="com.ibm.etools.msg.dictionary.actionSet1"/>
+<alwaysOnActionSet id="com.ibm.etools.msg.reporting.infrastructure.actionSet"/>
+<alwaysOnActionSet id="com.ibm.etools.patterns.PatternActionSet"/>
+<alwaysOnActionSet id="com.ibm.wbit.samples.framework.help_samplestutorials_actionset_id"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="com.rational.clearcase.ActionSet"/>
+<alwaysOffActionSet id="com.ibm.etools.miniwelcome.miniWelcomeActionSet"/>
+<alwaysOffActionSet id="com.ibm.rational.welcome.core.webResourcesActionSet"/>
+<show_view_action id="com.ibm.etools.mft.navigator.resource"/>
+<show_view_action id="com.ibm.etools.patterns.views.PatternExplorerView"/>
+<show_view_action id="com.ibm.etools.mft.broker.repository.views.RepositoryView"/>
+<show_view_action id="com.ibm.etools.mft.broker.runtime.views.BrokerRuntimeView"/>
+<show_view_action id="com.ibm.etools.mft.broker.runtime.views.DeploymentLogView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.gef.ui.palette_view"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="com.ibm.datatools.project.ui.projectExplorer"/>
+<show_view_action id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator"/>
+<new_wizard_action id="com.ibm.etools.mft.util.ui.wizards.newApplication"/>
+<new_wizard_action id="com.ibm.etools.mft.util.ui.wizards.newServiceApplication"/>
+<new_wizard_action id="com.ibm.etools.mft.util.ui.wizards.newLibrary"/>
+<new_wizard_action id="com.ibm.etools.mft.dotnet.wizard1"/>
+<new_wizard_action id="com.ibm.etools.mft.util.ui.wizards.newMessageBrokerProject"/>
+<new_wizard_action id="com.ibm.etools.mft.pattern.capture.newprojectwizard.PatternCaptureNewWizard"/>
+<new_wizard_action id="com.ibm.etools.mft.wizards.newnodeproject"/>
+<new_wizard_action id="com.ibm.etools.mft.wizards.newflow"/>
+<new_wizard_action id="com.ibm.etools.mft.wizards.newsubflow"/>
+<new_wizard_action id="com.ibm.etools.msg.importer.dfdl.wizards.GenMsgModelWizard"/>
+<new_wizard_action id="com.ibm.etools.mapping.wizards.mappable.newesqlmap"/>
+<new_wizard_action id="com.ibm.etools.mft.wizards.newmfsql"/>
+<new_wizard_action id="com.ibm.etools.mft.adapter.emd.ui.wizards.EMDWizard"/>
+<new_wizard_action id="com.ibm.etools.mft.rdb.wizards.rdbimport.ImportRDBDefinitionsWizard"/>
+<new_wizard_action id="com.ibm.etools.mft.esql.lineage.ui.wizards.newdatalineagewizard"/>
+<new_wizard_action id="com.ibm.etools.mft.bar.wizards.newbar"/>
+<new_wizard_action id="com.ibm.etools.mft.unittest.wizards.newtest.mflowcat"/>
+<new_wizard_action id="com.ibm.etools.mft.decision.service.ui.wizards.newdecisionservice"/>
+<new_wizard_action id="com.ibm.etools.mft.connector.ui.editor.wizards.MQDiscoverServiceWizard"/>
+<new_wizard_action id="com.ibm.etools.mft.connector.ui.editor.wizards.DBDiscoverServiceWizard"/>
+<new_wizard_action id="com.ibm.etools.mft.wizards.newnode"/>
+<new_wizard_action id="com.ibm.hcls.sdg.ui.newprojectwizard.DataAnalysisNewWizard"/>
+<perspective_action id="com.ibm.datatools.core.internal.ui.perspective"/>
+<perspective_action id="com.ibm.dfdl.ui.dfdlTestPerspective"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="com.ibm.etools.mft.navigator.resource"/>
+<view id="com.ibm.etools.patterns.views.PatternExplorerView"/>
+<view id="com.ibm.etools.mft.broker.runtime.views.BrokerRuntimeView"/>
+<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="com.ibm.etools.mft.broker.runtime.views.DeploymentLogView"/>
+<view id="org.eclipse.ui.internal.introview"/>
+<fastViews>
+<view id="com.ibm.xtools.mde.guidance" ratio="0.3"/>
+</fastViews>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="com.ibm.etools.mft.navigator.resource" appearance="2" expanded="2">
+<page content="com.ibm.etools.mft.navigator.resource" label="Application Development"/>
+<page content="com.ibm.etools.patterns.views.PatternExplorerView" label="Patterns Explorer"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@50420367" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.gef.ui.palette_view" ratio="0.26653504" ratioLeft="270" ratioRight="743" relationship="2" relative="topLeft"/>
+<info folder="true" part="taskArea" ratio="0.50501674" ratioLeft="302" ratioRight="296" relationship="4" relative="org.eclipse.gef.ui.palette_view">
+<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="com.ibm.etools.mft.broker.runtime.views.DeploymentLogView" label="Deployment Log"/>
+<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.18" ratioLeft="126" ratioRight="574" relationship="2" relative="org.eclipse.gef.ui.palette_view"/>
+<info folder="true" part="bottomLeft" ratio="0.6605351" ratioLeft="395" ratioRight="203" relationship="4" relative="topLeft">
+<folder activePageID="com.ibm.etools.mft.broker.runtime.views.BrokerRuntimeView" appearance="2" expanded="2">
+<page content="com.ibm.etools.mft.broker.runtime.views.BrokerRuntimeView" label="Integration Nodes"/>
+<page content="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" label="Data Source Explorer"/>
+<page content="com.ibm.datatools.project.ui.projectExplorer" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ibm.etools.mft.flow.editor" path="/TestOne/TestMQIN.msgflow"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" path="/TestOne/IBMdefined/soap.xsd"/>
+<editor PRODUCTID="com.ibm.etools.msgbroker.tooling.ide" PRODUCTNAME="IBM Integration Toolkit" factoryID="com.ibm.wbit.samples.framework.editor.SamplesGalleryEditorElementFactory" id="com.ibm.wbit.samples.framework.editor.SamplesGalleryEditor"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.wsdl.ui.internal.WSDLEditor" path="/TestOne/HelloWorld.wsdl"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.wsdl.ui.internal.WSDLEditor" path="/TestOne/QueryInfoService.wsdl"/>
+</editors>
+<item historyLabel="TestMQIN.msgflow" index="0"/>
+<item historyLabel="TestMQIN.msgflow" index="0"/>
+<item historyLabel="soap.xsd" index="1">
+<position path=""/>
+</item>
+<item historyLabel="TestMQIN.msgflow" index="0"/>
+<item historyLabel="Samples and Tutorials" index="2"/>
+<item historyLabel="HelloWorld.wsdl" index="3"/>
+<item historyLabel="QueryInfoService.wsdl" index="4"/>
+<item historyLabel="HelloWorld.wsdl" index="3"/>
+<item historyLabel="Samples and Tutorials" index="2"/>
+<item historyLabel="TestMQIN.msgflow" index="0"/>
+<item active="true" historyLabel="Samples and Tutorials" index="2"/>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ibm.etools.mft.flow.editor" name="TestMQIN.msgflow" tooltip="TestOne/TestMQIN.msgflow">
+<persistable path="/TestOne/TestMQIN.msgflow"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.wsdl.ui.internal.WSDLEditor" name="QueryInfoService.wsdl" tooltip="TestOne/QueryInfoService.wsdl">
+<persistable path="/TestOne/QueryInfoService.wsdl"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.wsdl.ui.internal.WSDLEditor" name="HelloWorld.wsdl" tooltip="TestOne/HelloWorld.wsdl">
+<persistable path="/TestOne/HelloWorld.wsdl"/>
+</file>
+<file factoryID="com.ibm.wbit.samples.framework.editor.SamplesGalleryEditorElementFactory" id="com.ibm.wbit.samples.framework.editor.SamplesGalleryEditor" name="Samples for IBM Integration Toolkit" tooltip="">
+<persistable PRODUCTID="com.ibm.etools.msgbroker.tooling.ide" PRODUCTNAME="IBM Integration Toolkit"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xsd.ui.internal.editor.InternalXSDMultiPageEditor" name="soap.xsd" tooltip="TestOne/IBMdefined/soap.xsd">
+<persistable path="/TestOne/IBMdefined/soap.xsd"/>
+</file>
+</mruList>
+</workbench>

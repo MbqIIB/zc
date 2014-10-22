@@ -1,0 +1,130 @@
+<?xml version="1.0" ?><wsdl:definitions name="HelloWorldImplService" targetNamespace="http://interfaces.test.cxf.com/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://interfaces.test.cxf.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://interfaces.test.cxf.com/" xmlns="http://interfaces.test.cxf.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="listObject">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="list" nillable="true" type="xs:anyType"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="User">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:int"></xs:element>
+      <xs:element minOccurs="0" name="name" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="findUsers" type="findUsers"></xs:element>
+  <xs:complexType name="findUsers">
+    <xs:sequence></xs:sequence>
+  </xs:complexType>
+  <xs:element name="findUsersResponse" type="findUsersResponse"></xs:element>
+  <xs:complexType name="findUsersResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="listObject"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="say" type="say"></xs:element>
+  <xs:complexType name="say">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="sayResponse" type="sayResponse"></xs:element>
+  <xs:complexType name="sayResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="sayUserName" type="sayUserName"></xs:element>
+  <xs:complexType name="sayUserName">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="user" type="User"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="sayUserNameResponse" type="sayUserNameResponse"></xs:element>
+  <xs:complexType name="sayUserNameResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="sayUserName">
+    <wsdl:part element="tns:sayUserName" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="say">
+    <wsdl:part element="tns:say" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="findUsersResponse">
+    <wsdl:part element="tns:findUsersResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="findUsers">
+    <wsdl:part element="tns:findUsers" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="sayUserNameResponse">
+    <wsdl:part element="tns:sayUserNameResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="sayResponse">
+    <wsdl:part element="tns:sayResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="HelloWorld">
+    <wsdl:operation name="findUsers">
+      <wsdl:input message="tns:findUsers" name="findUsers">
+    </wsdl:input>
+      <wsdl:output message="tns:findUsersResponse" name="findUsersResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="say">
+      <wsdl:input message="tns:say" name="say">
+    </wsdl:input>
+      <wsdl:output message="tns:sayResponse" name="sayResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sayUserName">
+      <wsdl:input message="tns:sayUserName" name="sayUserName">
+    </wsdl:input>
+      <wsdl:output message="tns:sayUserNameResponse" name="sayUserNameResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HelloWorldImplServiceSoapBinding" type="tns:HelloWorld">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+    <wsdl:operation name="findUsers">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="findUsers">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="findUsersResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="say">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="say">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="sayResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sayUserName">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="sayUserName">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="sayUserNameResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HelloWorldImplService">
+    <wsdl:port binding="tns:HelloWorldImplServiceSoapBinding" name="HelloWorldImplPort">
+      <soap:address location="http://localhost:9000/c/services/HelloWorld"></soap:address>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

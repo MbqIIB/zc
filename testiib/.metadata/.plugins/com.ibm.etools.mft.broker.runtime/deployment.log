@@ -1,0 +1,11 @@
+TestOne>>IIB9>>default>>0>>1386058585984
+2871<<Administration Result<<2013-12-03 16:16:42.370 CST<<zcheng<<deploy<<D:/testcode/testiib/GeneratedBarFiles/TestOneproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+TestOne>>IIB9>>default>>0>>1386058821811
+2871<<Administration Result<<2013-12-03 16:20:29.909 CST<<zcheng<<deploy<<D:/testcode/testiib/GeneratedBarFiles/TestOneproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
+TestOne>>IIB9>>default>>2>>1386058981480
+2087<<Runtime Response<<2013-12-03 16:23:05.916 CST<<IIB9<<325a52e3-6256-4378-9342-416a2d7e0f8e
+4041<<Runtime Response<<2013-12-03 16:23:05.916 CST<<default<<061c6f6e-4201-0000-0080-dc441de07046
+2211<<Runtime Response<<2013-12-03 16:23:05.917 CST<<URLSpecifier<<localhost:4414<<http://host[:port][/path]<<TestMQIN.
+2871<<Administration Result<<2013-12-03 16:23:05.917 CST<<zcheng<<deploy<<D:/testcode/testiib/GeneratedBarFiles/TestOneproject.generated.bar<<BAR<<default<<ExecutionGroup<<FAILED
+TestOne>>IIB9>>default>>0>>1386059007950
+2871<<Administration Result<<2013-12-03 16:23:31.918 CST<<zcheng<<deploy<<D:/testcode/testiib/GeneratedBarFiles/TestOneproject.generated.bar<<BAR<<default<<ExecutionGroup<<COMPLETE
